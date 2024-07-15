@@ -1,15 +1,16 @@
-
 import React from "react";
 import { useParams } from "react-router-dom";
-import PostDetail from "../components/post/PostDetail";
+import Post_detail from "../components/post/Post-detail";
 
 function Post() {
   const { id } = useParams();
 
   return (
-    <div className="user">
-      <PostDetail id={id} />
-    </div>
+    <>
+      <div className="user">
+        <Post_detail id={id} />
+      </div>
+    </>
   );
 }
 
